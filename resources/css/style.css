@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template: auto / repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.arrow-up {
+  font-size: 40px;
+  position: relative;
+  z-index: 9999;
+}
+
+.arrow-up p a {
+  position: absolute;
+  left: 94%;
+  top: 400px;
+  position: fixed;
+  color: #f34;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* Navigation bar */
+
+.logo img {
+  width: 80px;
+}
+
+#nav-bar {
+  background-color: #fff;
+  box-shadow: 5px 5px 20px #fff;
+}
+
+#nav-bar li a {
+  color: #444;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Home */
+#home {
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 4% 0;
+  color: #fff;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-container img {
+  width: 100%;
+}
+
+.home-container p {
+  margin: 4% 0;
+}
+
+.btn-showcase {
+  background-color: #f69;
+  border-radius: 30px;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.btn-showcase:hover {
+  color: #fff;
+  background-color: #f66;
+}
+
+/* About */
+#about {
+  padding: 4% 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../css/img/nature.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+}
+
+#about h2 {
+  margin: 2% 0;
+}
+
+/* Blog */
+
+#blog {
+  padding: 4% 0;
+}
+
+#blog h2,
+#blog h3 {
+  margin-bottom: 2%;
+}
+
+.center {
+  text-align: center;
+}
+
+#blog img {
+  width: 300px;
+}
+
+#blog .grid-containers {
+  margin-bottom: 2%;
+  display: flex;
+}
+
+#blog .grid-containers img {
+  margin-right: 3%;
+}
+
+/* Feedback */
+#feedback {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../css/img/cross.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 4% 0;
+}
+
+#feedback h2 {
+  margin: 1% 0 3% 0;
+}
+
+#feedback form {
+  width: 60%;
+  margin-left: 20%;
+}
+
+#feedback button {
+  background-color: #f69;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 30px;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+#feedback button:hover {
+  color: #f66;
+  transform: scale(1.06);
+  color: #fff;
+}
+
+/* Contacts */
+#contact {
+  background: linear-gradient(to right, #41295a, #2f0743);
+  color: #fff;
+  padding: 4% 0;
+}
+
+#contact h2 {
+  margin: 2% 0;
+}
+
+#contact .navigation-nav li i {
+  transition: transform 0.1s;
+  color: #fff;
+}
+
+#contact .navigation-nav li i:hover {
+  transform: scale(1.8);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2% 0;
+}
+
+footer p {
+  margin-top: 3%;
+}
+
+footer li a {
+  color: #fff;
+}
+
+footer li a:hover {
+  color: #fff;
+  opacity: 0.8;
+}
